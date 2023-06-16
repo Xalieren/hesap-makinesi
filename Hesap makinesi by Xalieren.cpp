@@ -20,32 +20,33 @@ int main()
 	if (islem == 'T')
 	{
 		cout << "Sonuc: " << sayi1 + sayi2 << endl;
-		cout << "by Xalieren" << endl;
+		
 	}
 
 	else if (islem == 'C')
 	{
 		cout << "Sonuc: " << sayi1 - sayi2 << endl;
-		cout << "by Xalieren" << endl;
+		
 	}
 
 	else if (islem=='P')
 	{
 		cout << "Sonuc: " << sayi1 * sayi2 << endl;
-		cout << "by Xalieren" << endl;
+		
 	}
 
 	else if (islem == 'B')
 	{
 		cout << "Sonuc: " << sayi1 / sayi2 << endl;
-		cout << "by Xalieren" << endl;
+		
 	}
 
 	else
 	{
 		cout << "Lutfen programi yeniden baslatin!" << endl;
-		cout << "by Xalieren" << endl;
+		
 	}
+	cout << "by Xalieren" << endl;
 	system("PAUSE");
 	return 0;
 }
