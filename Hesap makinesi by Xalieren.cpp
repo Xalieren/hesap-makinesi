@@ -5,6 +5,7 @@ using namespace std;
 int main()
 {
 	int sayi1, sayi2;
+	int sonuc;
 	char islem;
 	cout << "Hesap makinesine hosgeldiniz!" << endl << "Birinci sayiyi giriniz: " << endl;
 	cin >> sayi1;
@@ -17,35 +18,26 @@ int main()
 	cout << "Islem seciniz: " << endl;
 	cin >> islem;
 
-	if (islem == 'T')
-	{
-		cout << "Sonuc: " << sayi1 + sayi2 << endl;
-		
+	switch(islem){
+		case "T":
+			sonuc = sayi1 + sayi2;
+			break;
+		case "C":
+			sonuc = sayi1 - sayi2;
+			break;
+		case "P":
+			sonuc = sayi1 * sayi2;
+			break;
+		case "B":
+			sonuc = sayi1 / sayi2;
+			break;
+		default:
+			cout << "Lutfen programi yeniden baslatin!" << endl;
+			exit();
+			break;
 	}
-
-	else if (islem == 'C')
-	{
-		cout << "Sonuc: " << sayi1 - sayi2 << endl;
-		
-	}
-
-	else if (islem=='P')
-	{
-		cout << "Sonuc: " << sayi1 * sayi2 << endl;
-		
-	}
-
-	else if (islem == 'B')
-	{
-		cout << "Sonuc: " << sayi1 / sayi2 << endl;
-		
-	}
-
-	else
-	{
-		cout << "Lutfen programi yeniden baslatin!" << endl;
-		
-	}
+	
+	cout << "Sonuc: " << sonuc << endl;
 	cout << "by Xalieren" << endl;
 	system("PAUSE");
 	return 0;
